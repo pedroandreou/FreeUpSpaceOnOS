@@ -11,3 +11,9 @@ os.system("sudo journalctl --vacuum-time=3d")
 
 # Remove older versions of Snap applications
 os.system("du -h /var/lib/snapd/snaps")
+
+# Empty trash bin
+os.system("gio trash --empty")
+
+# Use ncdu to see how much space each file holds
+os.system("ncdu $HOME")
